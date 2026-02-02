@@ -1,0 +1,19 @@
+#include<stdio.h>
+
+int main(){
+    int a, b, temp;
+    
+    printf("Enter two numbers: ");
+    scanf("%d %d", &a, &b);
+    
+    // Euclidean algorithm to find HCF
+    while(b != 0){
+        temp = b;
+        b = a % b;
+        a = temp; 
+    }
+    
+    printf("HCF of the two numbers is: %d\n", a);
+    
+    return 0;
+}
