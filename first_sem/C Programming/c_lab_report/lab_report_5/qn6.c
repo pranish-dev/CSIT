@@ -3,7 +3,7 @@ int main (){
         int a,b;
     printf("Enter Order of matrix:");
     scanf("%d%d",&a,&b);
-    int max[a][b],trans[a][b] ;
+    int max[a][b],trans[b][a] ;
     printf("Enter Elements of Martix 1:");
     for ( int i = 0; i < a; i++)
     {
@@ -16,7 +16,7 @@ int main (){
     {
         for (int j = 0; j < b; j++)
         {
-            trans[i][j]=max[j][i];
+            trans[j][i]=max[i][j];
         }
     }
         printf("The transpose of Matrices is :\n");
@@ -25,7 +25,6 @@ int main (){
         for (int j = 0; j < b; j++)
         {
             printf("%d ",trans[i][j]);
-
         }
         printf(" \n");
     }
