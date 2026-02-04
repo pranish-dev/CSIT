@@ -16,7 +16,9 @@ int main(){
         {
             printf("%d found on index is %d and position is %d\n",item,i,i+1);
         }
-        
+        else
+           printf("Item Not Found.");
+           return 0;
     }
     return 0;
 }
