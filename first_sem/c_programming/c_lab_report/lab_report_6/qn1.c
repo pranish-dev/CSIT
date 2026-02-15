@@ -7,21 +7,21 @@ int main (){
     gets(a);
     strcpy(temp,a);
     len=strlen(a);
-    printf("length of %s is %d",a,len);
+    printf("length of %s is %d\n",a,len);
     strcpy(copied,a);
-    printf("\ncopied string is %s",copied);
+    printf("\ncopied string is %s\n",copied);
     printf("\nEnter another string to Concat:");
     gets(cat);
     strcat(a,cat);
-    printf("\nconcated string is %s",a);
+    printf("\nconcated string is %s\n",a);
     printf("\n%d",strcmp(temp,copied));
 
     strlwr(a);
-    printf("\nLower Cased String is %s",a);
+    printf("\nLower Cased String is %s\n",a);
     strupr(a);
-    printf("\nUpper Cased String is %s",a);
+    printf("\nUpper Cased String is %s\n",a);
     strrev(a);
-    printf("\nReversed String is %s",a);
+    printf("\nReversed String is %s\n",a);
     return 0;
 
 }

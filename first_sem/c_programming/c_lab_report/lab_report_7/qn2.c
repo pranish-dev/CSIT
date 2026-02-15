@@ -9,6 +9,6 @@ int main (){
     printf("Enter Length, Breadth, Height Respectively:");
     scanf("%f%f%f",&l,&b,&h);
     sarea=surfarea(l,b,h);
-    printf("The surface area is %.2f",sarea);
+    printf("The surface area is %.2f\n",sarea);
     return 0;
 }

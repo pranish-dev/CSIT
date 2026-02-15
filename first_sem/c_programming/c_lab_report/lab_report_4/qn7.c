@@ -19,5 +19,6 @@ int main (){
         }
         printf("%d ",fibo);
     }
+    printf("\n");
     return 0;
 }

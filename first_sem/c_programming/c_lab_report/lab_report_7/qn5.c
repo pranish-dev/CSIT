@@ -1,8 +1,8 @@
 #include<stdio.h>
 void bubblesort(int n){
     int arr[n];
-    printf("Enter the elements: ");
     for(int i=0; i<n; i++){
+        printf("Enter the %d elements: ",i+1);
         scanf("%d", &arr[i]);
     }
     for(int i=0; i<n-1; i++){
@@ -18,6 +18,7 @@ void bubblesort(int n){
     for(int i=0; i<n; i++){
         printf("%d ", arr[i]);
     }
+    printf("\n");
 }
 int main(){
     int n;

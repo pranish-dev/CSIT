@@ -10,10 +10,10 @@ int main (){
         n=n/10;
     }
     if (check==rev){
-        printf("The number %d is a palindrome.", check);
+        printf("The number %d is a palindrome.\n", check);
     }
     else{
-        printf("The number %d is not a palindrome.", check);
+        printf("The number %d is not a palindrome.\n", check);
     }
     return 0;
 }

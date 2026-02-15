@@ -8,6 +8,6 @@ int main (){
         rev=rev*10+temp;
         n=n/10;
     }
-    printf("Reversed number is: %d", rev);
+    printf("Reversed number is: %d\n", rev);
     return 0;
 }

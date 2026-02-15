@@ -7,6 +7,6 @@ int main (){
         fact=fact*n;
         n--;
     }
-    printf("Factorial is: %d", fact);
+    printf("Factorial is: %d\n", fact);
     return 0;
 }

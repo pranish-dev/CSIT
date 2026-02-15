@@ -5,7 +5,7 @@ int main(){
     printf("Enter Integer:");
     scanf("%d",&n);
     factor=fact(n);
-    printf("The factorial of %d is %d",n,factor);
+    printf("The factorial of %d is %d\n",n,factor);
     return 0;
 }
 int fact(int n){
