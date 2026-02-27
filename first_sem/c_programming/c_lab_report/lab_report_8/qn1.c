@@ -7,16 +7,17 @@ struct company
 }c;
 int main (){
     printf("Enter Company name:");
-    gets(c.name);
+    fgets(c.name, sizeof(c.name), stdin);
     printf("Enter Company address:");
-    gets(c.address);
+    fgets(c.address, sizeof(c.address), stdin);
     printf("Enter Company phone number:");
     scanf("%ld",&c.number);
     printf("Enter number of employee:");
     scanf("%d",&c.no_of_employee);
-    printf("Company name:%s\n",c.name);
-    printf("Company address:%s\n",c.address);
-    printf("Company phone number:%d\n",c.number);
+    printf("\nCompany details:\n");
+    printf("Company name:%s",c.name);
+    printf("Company address:%s",c.address);
+    printf("Company phone number:%ld\n",c.number);
     printf("number of employee:%d\n",c.no_of_employee);
     return 0;
 }
