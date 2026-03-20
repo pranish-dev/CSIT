@@ -12,6 +12,7 @@ struct student
 
 void display(struct student *s)
 {
+    printf("\nStudent Details:\n");
     printf("RollNo: %d\n", s->RollNo);
     printf("Name: %s\n", s->Name);
     printf("Address: %s\n", s->Address);

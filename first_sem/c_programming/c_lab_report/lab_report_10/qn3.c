@@ -8,7 +8,7 @@ int main(){
     {
         fputc(ch,fp2);     
     }
-    printf("File Copied....");
+    printf("File Copied....\n");
     fclose(fp1);
     fclose(fp2);
     return 0;

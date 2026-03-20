@@ -1,5 +1,4 @@
 #include <graphics.h>
-#include <conio.h>
 
 int main()
 {
@@ -15,7 +14,7 @@ for (int i = 0; i < 600; i+=5)
     circle(220+i,250,10);
     delay(20);
     }
-    getch();
+    getchar();
     closegraph();
     return 0;
 }
