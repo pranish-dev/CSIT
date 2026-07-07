@@ -6,9 +6,9 @@ namespace Permanent
 {
     void salary(float basic)
     {
-        float allowance = basic * 0.20f;
-        float deduction = basic * 0.10f;
-        float netSalary = basic + allowance - deduction;
+        float hra = basic * 0.20f;
+        float tax = basic * 0.10f;
+        float netSalary = basic + hra - tax;
 
         cout << "\n";
         cout << setfill('=') << setw(50) << "" << endl;
@@ -21,10 +21,10 @@ namespace Permanent
              << basic << endl;
 
         cout << left << setw(25) << "HRA (20%)"
-             << right << setw(15) << allowance << endl;
+             << right << setw(15) << hra << endl;
 
         cout << left << setw(25) << "Tax (10%)"
-             << right << setw(15) << deduction << endl;
+             << right << setw(15) << tax << endl;
 
         cout << setfill('-') << setw(40) << "" << endl;
         cout << setfill(' ');
@@ -40,8 +40,8 @@ namespace Contract
 {
     void salary(float basic)
     {
-        float bonus = basic * 0.10f;
-        float netSalary = basic + bonus;
+        float allowance = basic * 0.10f;
+        float netSalary = basic + allowance;
 
         cout << "\n";
         cout << setfill('=') << setw(50) << "" << endl;
@@ -54,7 +54,7 @@ namespace Contract
              << basic << endl;
 
         cout << left << setw(25) << "Allowance (10%)"
-             << right << setw(15) << bonus << endl;
+             << right << setw(15) << allowance << endl;
 
         cout << setfill('-') << setw(40) << "" << endl;
         cout << setfill(' ');
