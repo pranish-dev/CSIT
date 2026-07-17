@@ -18,7 +18,7 @@ int main(){
     cout<<"Enter distance in feet and inches: ";
     cin>>f>>i;
     Distance d(f, i);
-    float totalDistance = d; // Implicit conversion to float
-    cout<<"Total distance in feet: "<<totalDistance<<endl;
+    float dis = d;
+    cout<<"Total distance in feet: "<<dis<<endl;
     return 0;
 }
