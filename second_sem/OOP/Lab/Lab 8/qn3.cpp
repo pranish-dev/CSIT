@@ -12,7 +12,10 @@ int main()
     }
 
     int numbers[5] = {10, 20, 30, 40, 50};
-
+    for (int i=0; i<5; i++){
+        cout<<numbers[i]<<" ";
+    }
+    cout << endl;
     for (int i = 0; i < 5; i++)
     {
         file.write((char *)&numbers[i], sizeof(int));
@@ -45,7 +48,12 @@ int main()
     file.seekg(pos * sizeof(int), ios::beg);
     file.read((char *)&value, sizeof(int));
     cout << "Updated value at position " << pos << " is: " << value << endl;
-
+    for (int i=0; i<5; i++){
+        file.seekg(i * sizeof(int), ios::beg);
+        file.read((char *)&value, sizeof(int));
+        cout << value << " ";
+    }
+    cout << endl;
     file.close();
     return 0;
 }
